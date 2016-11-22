@@ -1,0 +1,192 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="googlebot" content="noindex, nofollow">
+
+  
+  
+
+  
+  
+  
+
+  
+
+  <script type="text/javascript" src="/js/lib/dummy.js"></script>
+
+  
+
+  
+
+  
+
+  
+    <link rel="stylesheet" type="text/css" href="/css/result-light.css">
+  
+
+  
+
+  <style type="text/css">
+    .eye {
+  background-color: green;
+  width: 20%;
+  height: 20%;
+  border-radius: 0%;
+}
+
+.arm {
+  background-color: #cacaca;
+  position: absolute;
+  top: 35%;
+  width: 5%;
+  height: 40%;
+}
+
+#head {
+  width: 30%;
+  height: 30%;
+  border-radius: 0%;
+  background-color: #dadada;
+  position: absolute;
+  left: 33%;
+  top: 5%;
+}
+
+#righteye {
+  position: absolute;
+  left: 20%;
+  top: 20%;
+}
+
+#lefteye {
+  position: absolute;
+  left: 60%;
+  top: 20%;
+}
+
+#righttears {
+  position: absolute;
+  left: 20%;
+  top: 40%;
+}
+
+#lefttears {
+  position: absolute;
+  left: 60%;
+  top: 40%;
+  background-color: #dadada;
+}
+
+#mouth {
+  position: absolute;
+  width: 65%;
+  height: 15%;
+  left: 20%;
+  top: 70%;
+  background-color: red;
+}
+
+#body {
+  position: absolute;
+  left: 25%;
+  top: 35%;
+  width: 45%;
+  height: 55%;
+  background-color: #dadada;
+  text-align: center;
+  padding-top: 30px;
+}
+
+#rightarm {
+  position: absolute;
+  left: 20%;
+}
+
+#leftarm {
+  position: absolute;
+  left: 70%;
+}
+
+.quotation {
+  position: absolute;
+}
+
+  </style>
+
+  <title>Emotion helper. by meepbato</title>
+
+  
+    
+
+
+
+
+<script type='text/javascript'>//<![CDATA[
+window.onload=function(){
+/* Hi anyone who reads this. This is an emotion code for cheering you up if your sad or angry and giving you some advice if you are happy. please do not make fun of this because we took very long to code the game. Sorry for any inconvenience caused. - Owner Zion and Owner Steven.*/
+
+/*
+If you don't understand anything here, please ask me or Steven. This has some bible verses inside. : ) 
+*/
+
+//declaring variable 
+var emotions = prompt("How are you feeling today?");
+
+//Declare functions.
+justDoIt();
+
+//justDoIt function. With 23 soccer points.(wut)
+function justDoIt() {
+  //switch statement for emotion
+  if (emotions === "happy") {
+    alert("Psalm 37:4. Take delight in the LORD, and he will give you the desires of your heart.");
+    document.getElementById("Explanation").innerHTML = "<strong>Even if you are happy, you shouldn't boast about it to anyone. No one and nothing.</strong>";
+  } else if (emotions === "angry") {
+    alert("Ephesians 4:26-27. 26 “In your anger do not sin” : Do not let the sun go down while you are still angry, 27 and do not give the devil a foothold.");
+    document.getElementById("head").style.backgroundColor = "red";
+    document.getElementById("mouth").style.backgroundColor = "blue";
+  } else if (emotions === "sad") {
+    alert("Awwww, it's ok. Here's some encouraging stuff: Deuteronomy 31:8. 8. The LORD himself goes before you and will be with you; he will never leave you nor forsake you. Do not be afraid; do not be discouraged.”")
+    document.getElementById("body").style.backgroundColor = "cyan";
+    //tears are on the body...
+    document.getElementById("Explanation").innerHTML = "<h3>The blue thing is not a shirt but tears... Don't stay in a pity puddle though. Jump out of it as fast as you can.</h3>"
+  } else {
+    alert("What is " + emotions + "? I never heard of that or that is not a computable emotion for this program. Please understand that I am a dumb computer, because COMPUTERS ARE DUMB!")
+  }
+};
+
+}//]]> 
+
+</script>
+
+  
+</head>
+
+<body>
+  <div id="robot">
+  <div id="head">
+    <div class="eye" id="righteye"></div>
+    <div class="eye" id="lefteye"></div>
+    <div class="tears" id="righttears"></div>
+    <div class="tears" id="lefttears"></div>
+    <div id="mouth"></div>
+  </div>
+  <div class="arm" id="rightarm"></div>
+  <div id="body">
+    <p>I &lt;3 MINECRAFT!</p>
+    <div id="Explanation"></div>
+  </div>
+  <div class="arm" id="leftarm"></div>
+</div>
+<div id="things">
+  <div id="quotation"></div>
+</div>
+
+  
+</body>
+
+</html>
+
